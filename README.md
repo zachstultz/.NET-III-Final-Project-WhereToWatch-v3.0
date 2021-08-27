@@ -1,7 +1,7 @@
 # .NET II Final Project: WhereToWatch v3.0
 WhereToWatch v3.0 is a media search tool that I made for my .NET II Final Project in Jim Glasgow's class at Kirkwood Community College. v3.0 includes a desktop app that integrates with a website through ASP.NET. Results are pulled from TheMovieDB's API, then stored in the Microsoft SQL Server Database. User Favorites are also stored in the local database.
 
-During this semester we learned more C#, more visual studio, using a database with our program, and integrating ASP.NET into our project so our desktop program has and integrates with our website.
+During this semester we learned more C#, more visual studio, using a database with our program, and integrating ASP.NET into our project so our desktop program has and integrates with our website. When it came to ASP.NET we learned a code first approach for websites, we learned and used Views, and learned and used Controllers.
 
 # IMPORTANT STEPS FOR TESTING
 1. Add your API Key to MediaLogicLayer/MediaAPI.cs
