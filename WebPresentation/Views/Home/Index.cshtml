@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using System.Web.UI.HtmlControls
+@using DataAccessLayer
+@using DomainModels
+
+@model DomainModels.Movie
+@{
+    MovieAccessor movieAccessor = new MovieAccessor();
+    List<Movie> movies = movieAccessor.SelectAllMovies();
+    Random random = new Random();
+    int number = random.Next(0, movies.Count-1);
+    string randomBackdropPath = movies[number].BackdropPath;
+    string simpsonsBackground = "https://image.tmdb.org/t/p/w1280/hpU2cHC9tk90hswCFEpf5AtbqoL.jpg";
+}
+<style>
+    .jumbotron {
+        width: 100%;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        color: white;
+        box-shadow: 2px 2px 2px #000000;
+        text-shadow: 2px 2px 3px #000000;
+        background-position: 1px -95px;
+    }
+</style>
+<div class="jumbotron" style="background-image: url(@simpsonsBackground)">
+
+    <h1>WhereToWatch</h1>
+
+    <p class="lead">
+        WhereToWatch is a free media search program that allows you to search up any movie or tv show and
+        view information about them.
+    </p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Find Movies to Watch.</h2>
+        <p>
+            Click on movies and find your next movie to watch.
+        </p>
+    </div>
+    <style>
+        body > div.container.body-content > div.row > div:nth-child(1) {
+            background-color: #333333 !important;
+            color: white;
+            box-shadow: white 5px 5px 5px;
+            border-radius: 20px;
+        }
+
+        body > div.container.body-content > div.row > div:nth-child(2) {
+            background-color: #333333 !important;
+            color: white;
+            box-shadow: white 5px 5px 5px;
+            border-radius: 20px;
+        }
+
+        body > div.container.body-content > div.row > div:nth-child(3) {
+            background-color: #333333 !important;
+            color: white;
+            box-shadow: white 5px 5px 5px;
+            border-radius: 20px;
+        }
+
+        body > div.container.body-content > div.row > div:nth-child(4) {
+            background-color: #333333 !important;
+            color: white;
+            box-shadow: white 5px 5px 5px;
+            border-radius: 20px;
+        }
+        body > div.container.body-content > div.row > div:nth-child(5) {
+            background-color: #333333 !important;
+            color: white;
+            box-shadow: white 5px 5px 5px;
+            border-radius: 20px;
+        }
+    </style>
+    <div class="col-md-4">
+        <h2>Find Tv Shows to Watch</h2>
+        <p>Click on tv shows and find your next movie to watch.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>View Trending Media</h2>
+        <p>You can easily find movies and tv shows are trending. Click on the Trending options above.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Add Movies and TV Shows to Your Favorites</h2>
+        <p>Login above and get access to being able to maintain your own favorites lists for movies and tv shows.</p>
+    </div>
+</div>

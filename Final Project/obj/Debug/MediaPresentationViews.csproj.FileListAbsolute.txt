@@ -1,0 +1,46 @@
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\Final Project.exe.config
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\Final Project.exe
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\Final Project.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaPresentationViews.csprojAssemblyReference.cache
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MainWindow.g.cs
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\App.g.cs
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project_MarkupCompile.cache
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project_MarkupCompile.lref
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MainWindow.baml
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project.g.resources
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final_Project.Properties.Resources.resources
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaPresentationViews.csproj.GenerateResource.cache
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaPresentationViews.csproj.CoreCompileInputs.cache
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project.exe
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\HtmlAgilityPack.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataAccess.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataObjects.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaLogicLayer.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\Newtonsoft.Json.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\TMDbLib.dll
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataAccess.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataAccess.dll.config
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataObjects.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaDataObjects.dll.config
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaLogicLayer.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\MediaLogicLayer.dll.config
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\HtmlAgilityPack.pdb
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\HtmlAgilityPack.xml
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\Newtonsoft.Json.xml
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaPresentationViews.csproj.CopyComplete
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaAboutPage.g.cs
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaAboutPage.baml
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaMovieResultPage.g.cs
+D:\School\2020\Fall\CIS-624-CRF02 (0318617) .NET Development II\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaMovieResultPage.baml
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaPresentationViews.csprojAssemblyReference.cache
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\frmUserDetailAddEdit.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\frmUpdatePassword.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MainWindow.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaAboutPage.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\MediaMovieResultPage.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\App.g.cs
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project_MarkupCompile.cache
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\Final Project\obj\Debug\Final Project_MarkupCompile.lref

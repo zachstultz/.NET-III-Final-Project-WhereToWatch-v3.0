@@ -1,0 +1,39 @@
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaLogicLayerInterfaces.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaLogicLayerInterfaces.pdb
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataObjects.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\TMDbLib.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\Newtonsoft.Json.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.pdb
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataObjects.pdb
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataObjects.dll.config
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\Newtonsoft.Json.xml
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csprojAssemblyReference.cache
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CoreCompileInputs.cache
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CopyComplete
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\MediaLogicLayerInterfaces.dll
+F:\2021\Spring\(CIS-626-CRF02) .NET Development III\Final Project\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\MediaLogicLayerInterfaces.pdb
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\LogicInterfaces.dll
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\LogicInterfaces.pdb
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.dll
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.dll
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.pdb
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.pdb
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.dll.config
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csprojAssemblyReference.cache
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CoreCompileInputs.cache
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CopyComplete
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.dll
+C:\Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.pdb
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\LogicInterfaces.dll
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\LogicInterfaces.pdb
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.dll
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.dll
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\MediaDataAccessInterfaces.pdb
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.pdb
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\bin\Debug\DomainModels.dll.config
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.AssemblyReference.cache
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.csproj.CopyComplete
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.dll
+C:\Users\Zach\Desktop\todo\3. .NET 3\(CIS-626-CRF02) .NET Development III\Final Project\05-10-21 Final Project\WhereToWatch v2.0\Final Project\MediaLogicLayerInterfaces\obj\Debug\LogicInterfaces.pdb

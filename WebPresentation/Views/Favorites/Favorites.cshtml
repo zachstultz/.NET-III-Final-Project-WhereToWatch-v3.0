@@ -1,0 +1,168 @@
+﻿@using DomainModels
+@model IEnumerable<object>
+
+@{
+    List<Movie> movies = new List<Movie>();
+    List<Tv> tvShows = new List<Tv>();
+    foreach (var item in Model)
+    {
+        if (item is Movie movie)
+        {
+            movies.Add(movie);
+        }
+        if (item is Tv tv)
+        {
+            tvShows.Add(tv);
+        }
+    }
+}
+
+@{
+    ViewBag.Title = "Favorites";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Favorites - Total @(movies.Count+tvShows.Count)</h2>
+
+<h2>Movies: @movies.Count</h2>
+<table id="movieTable" class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayName("Poster")
+        </th>
+        <th>
+            @Html.DisplayName("Title")
+        </th>
+        <th>
+            @Html.DisplayName("Year")
+        </th>
+        <th>
+            @Html.DisplayName("Overview")
+        </th>
+        <th>
+            @Html.DisplayName("Genres")
+        </th>
+        <th>
+            @Html.DisplayName("Keywords")
+        </th>
+        <th>
+            @Html.DisplayName("Budget")
+        </th>
+        <th>
+            @Html.DisplayName("Popularity")
+        </th>
+        <th>
+            @Html.DisplayName("Runtime")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in movies)
+    {
+        <tr>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.PosterPath)" alt="" width="200px" height="auto" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate.Value.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Overview)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Keywords)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Budget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Popularity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Runtime) mins
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteMovie", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<h2>TV Shows: @tvShows.Count</h2>
+<table id="tvTable" class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayName("Poster")
+        </th>
+        <th>
+            @Html.DisplayName("Title")
+        </th>
+        <th>
+            @Html.DisplayName("Year")
+        </th>
+        <th>
+            @Html.DisplayName("Overview")
+        </th>
+        <th>
+            @Html.DisplayName("Genres")
+        </th>
+        <th>
+            @Html.DisplayName("Keywords")
+        </th>
+        <th>
+            @Html.DisplayName("Popularity")
+        </th>
+        <th>
+            @Html.DisplayName("Seasons")
+        </th>
+        <th>
+            @Html.DisplayName("Episodes")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in tvShows)
+    {
+<tr>
+    <td>
+        <img src="@Html.DisplayFor(modelItem => item.PosterPath)" alt="" width="200px" height="auto" />
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstAirDate.Value.Year)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Overview)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Genres)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Keywords)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Popularity)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NumberOfSeasons)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NumberOfEpisodes)
+    </td>
+    <td>
+        @Html.ActionLink("Delete", "DeleteTvShow", new { id = item.Id })
+    </td>
+</tr>
+    }
+
+</table>
+

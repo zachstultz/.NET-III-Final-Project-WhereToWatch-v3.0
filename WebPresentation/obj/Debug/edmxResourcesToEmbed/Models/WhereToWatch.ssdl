@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="wheretowatch_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="actorid" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="imdbid" />
+    </Key>
+    <Property Name="actorid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adult" Type="bit" Nullable="false" />
+    <Property Name="alsoknownas" Type="varbinary" MaxLength="1" />
+    <Property Name="biography" Type="nvarchar" MaxLength="600" />
+    <Property Name="birthday" Type="datetime" Nullable="false" />
+    <Property Name="changes" Type="varbinary" MaxLength="1" />
+    <Property Name="deathday" Type="datetime" />
+    <Property Name="externalids" Type="varbinary" MaxLength="1" />
+    <Property Name="gender" Type="varbinary" MaxLength="1" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="70" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="images" Type="varbinary" MaxLength="1" />
+    <Property Name="imdbid" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="moviecredits" Type="varbinary" MaxLength="1" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="placeofbirth" Type="nvarchar" MaxLength="100" />
+    <Property Name="popularity" Type="float" />
+    <Property Name="profilepath" Type="nvarchar" MaxLength="70" />
+    <Property Name="taggedimages" Type="varbinary" MaxLength="1" />
+    <Property Name="tvcredits" Type="varbinary" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="FavoriteActorsList">
+    <Key>
+      <PropertyRef Name="FavoriteActorsListid" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="FavoriteActorsListid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="actors" Type="varbinary" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="FavoriteMoviesList">
+    <Key>
+      <PropertyRef Name="FavoriteMoviesListID" />
+    </Key>
+    <Property Name="FavoriteMoviesListID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="movies" Type="varbinary" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="favoritetvshowslist">
+    <Key>
+      <PropertyRef Name="favoritetvshowslistid" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="favoritetvshowslistid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="tvshows" Type="varbinary" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="movieid" />
+    </Key>
+    <Property Name="accountstates" Type="varbinary" MaxLength="1" />
+    <Property Name="adult" Type="int" Nullable="false" />
+    <Property Name="alternativetitles" Type="int" />
+    <Property Name="backdroppath" Type="int" />
+    <Property Name="belongstocollection" Type="int" />
+    <Property Name="budget" Type="float" />
+    <Property Name="changes" Type="varbinary" MaxLength="1" />
+    <Property Name="credits" Type="varbinary" MaxLength="1" />
+    <Property Name="genres" Type="varbinary" MaxLength="1" Nullable="false" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="70" />
+    <Property Name="images" Type="varbinary" MaxLength="1" />
+    <Property Name="imdbid" Type="nvarchar" MaxLength="30" />
+    <Property Name="keywords" Type="varbinary" MaxLength="1" />
+    <Property Name="lists" Type="varbinary" MaxLength="1" />
+    <Property Name="movieid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="originallanguage" Type="nvarchar" MaxLength="6" />
+    <Property Name="OriginalTitle" Type="nvarchar" MaxLength="35" />
+    <Property Name="overview" Type="nvarchar" MaxLength="600" />
+    <Property Name="popularity" Type="float" Nullable="false" />
+    <Property Name="posterpath" Type="nvarchar" MaxLength="70" />
+    <Property Name="productioncompanies" Type="varbinary" MaxLength="1" />
+    <Property Name="productioncountries" Type="nvarchar" MaxLength="250" />
+    <Property Name="recommendations" Type="varbinary" MaxLength="1" />
+    <Property Name="releasedate" Type="datetime" Nullable="false" />
+    <Property Name="releasedates" Type="varbinary" MaxLength="1" />
+    <Property Name="releases" Type="varbinary" MaxLength="1" />
+    <Property Name="revenue" Type="float" />
+    <Property Name="reviews" Type="varbinary" MaxLength="1" />
+    <Property Name="runtime" Type="int" Nullable="false" />
+    <Property Name="similar" Type="varbinary" MaxLength="1" />
+    <Property Name="spokenlanguages" Type="nvarchar" MaxLength="150" />
+    <Property Name="status" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="streamonlogo" Type="varbinary" MaxLength="1" />
+    <Property Name="streamon" Type="nvarchar" MaxLength="70" />
+    <Property Name="tagline" Type="nvarchar" MaxLength="100" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="trailer" Type="nvarchar" MaxLength="70" />
+    <Property Name="translations" Type="varbinary" MaxLength="1" />
+    <Property Name="video" Type="bit" />
+    <Property Name="videos" Type="varbinary" MaxLength="1" />
+    <Property Name="voteaverage" Type="float" Nullable="false" />
+    <Property Name="votecount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TVShow">
+    <Key>
+      <PropertyRef Name="tvshowid" />
+    </Key>
+    <Property Name="backdroppath" Type="nvarchar" MaxLength="70" />
+    <Property Name="createdby" Type="varbinary" MaxLength="1" />
+    <Property Name="credits" Type="varbinary" MaxLength="1" />
+    <Property Name="firstairdate" Type="datetime" />
+    <Property Name="genres" Type="varbinary" MaxLength="1" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="70" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="keywords" Type="varbinary" MaxLength="1" />
+    <Property Name="Name" Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="networks" Type="varbinary" MaxLength="1" />
+    <Property Name="numberofepisodes" Type="int" Nullable="false" />
+    <Property Name="numberofseasons" Type="int" Nullable="false" />
+    <Property Name="originalName" Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="overview" Type="nvarchar" MaxLength="600" />
+    <Property Name="popularity" Type="float" Nullable="false" />
+    <Property Name="posterpath" Type="nvarchar" MaxLength="70" />
+    <Property Name="seasons" Type="varbinary" MaxLength="1" />
+    <Property Name="status" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="streamonlogo" Type="varbinary" MaxLength="1" />
+    <Property Name="streamon" Type="nvarchar" MaxLength="70" />
+    <Property Name="trailer" Type="nvarchar" MaxLength="70" />
+    <Property Name="tvshowid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="20" />
+    <Property Name="videos" Type="varbinary" MaxLength="1" />
+    <Property Name="voteaverage" Type="float" Nullable="false" />
+    <Property Name="votecount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="nvarchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_roleID">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_userID">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_add_userRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="RoleID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_authenticate_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="PasswordHash" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_insert_new_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_reactivate_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_reset_passwordhash" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_safely_deactivate_user" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_safely_remove_userRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="RoleID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_select_all_roles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_select_all_users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_select_roles_by_UserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_select_user_by_email" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_select_user_by_id" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_select_users_by_active" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_update_passwordhash" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="OldPasswordHash" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewPasswordHash" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_update_user_profile_data" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="NewEmail" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewFirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewLastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewPhoneNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="OldEmail" Type="nvarchar" Mode="In" />
+    <Parameter Name="OldFirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OldLastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OldPhoneNumber" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="wheretowatch_dbModelStoreContainer">
+    <EntitySet Name="Actor" EntityType="Self.Actor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FavoriteActorsList" EntityType="Self.FavoriteActorsList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FavoriteMoviesList" EntityType="Self.FavoriteMoviesList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="favoritetvshowslist" EntityType="Self.favoritetvshowslist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TVShow" EntityType="Self.TVShow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_roleID" Association="Self.fk_roleID">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="fk_userID" Association="Self.fk_userID">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

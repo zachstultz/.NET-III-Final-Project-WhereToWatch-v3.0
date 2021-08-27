@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPresentation", "Final Project\WpfPresentation.csproj", "{CA55A0A1-C445-45BE-B9FF-E40E10D28346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "MediaLogicLayer\LogicLayer.csproj", "{198478F0-952A-4AB0-B504-7418CFF43491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModels", "MediaDataObjects\DomainModels.csproj", "{9EAE7AC3-90E9-429C-8977-698BFBEAB6F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "MediaDataAccess\DataAccessLayer.csproj", "{446F05C9-C7B4-4033-9E47-A7639FDF2189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessInterfaces", "MediaDataAccessInterfaces\DataAccessInterfaces.csproj", "{6783EB65-6176-42A9-AA57-473A4B44AF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicInterfaces", "MediaLogicLayerInterfaces\LogicInterfaces.csproj", "{44267DD2-6D58-495D-BD38-9ED79E64FA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPresentation", "WebPresentation\WebPresentation.csproj", "{AE785EF5-E305-4E8C-909C-2F4379C07330}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql Scripts PM", "Sql Scripts PM", "{50842D62-AA6C-441A-B995-36929F4C84E6}"
+	ProjectSection(SolutionItems) = preProject
+		Sql Scripts PM\create_db.bat = Sql Scripts PM\create_db.bat
+		Sql Scripts PM\movie_and_tv_favorites.sql = Sql Scripts PM\movie_and_tv_favorites.sql
+		Sql Scripts PM\movie_test_data.sql = Sql Scripts PM\movie_test_data.sql
+		Sql Scripts PM\trending_movie_test_data.sql = Sql Scripts PM\trending_movie_test_data.sql
+		Sql Scripts PM\trending_tv_test_data.sql = Sql Scripts PM\trending_tv_test_data.sql
+		Sql Scripts PM\tv_test_data.sql = Sql Scripts PM\tv_test_data.sql
+		Sql Scripts PM\wheretowatch_db.sql = Sql Scripts PM\wheretowatch_db.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{D9BF3AE3-BE71-4BB4-80F6-BA55DD4603BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{2BCCA45B-2A17-4DC7-9C6D-0323B4BC08A4}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\Image-not-found.png = Resources\Images\Image-not-found.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA55A0A1-C445-45BE-B9FF-E40E10D28346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA55A0A1-C445-45BE-B9FF-E40E10D28346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA55A0A1-C445-45BE-B9FF-E40E10D28346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA55A0A1-C445-45BE-B9FF-E40E10D28346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198478F0-952A-4AB0-B504-7418CFF43491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198478F0-952A-4AB0-B504-7418CFF43491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198478F0-952A-4AB0-B504-7418CFF43491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198478F0-952A-4AB0-B504-7418CFF43491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAE7AC3-90E9-429C-8977-698BFBEAB6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAE7AC3-90E9-429C-8977-698BFBEAB6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAE7AC3-90E9-429C-8977-698BFBEAB6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAE7AC3-90E9-429C-8977-698BFBEAB6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446F05C9-C7B4-4033-9E47-A7639FDF2189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446F05C9-C7B4-4033-9E47-A7639FDF2189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446F05C9-C7B4-4033-9E47-A7639FDF2189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446F05C9-C7B4-4033-9E47-A7639FDF2189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6783EB65-6176-42A9-AA57-473A4B44AF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6783EB65-6176-42A9-AA57-473A4B44AF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6783EB65-6176-42A9-AA57-473A4B44AF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6783EB65-6176-42A9-AA57-473A4B44AF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44267DD2-6D58-495D-BD38-9ED79E64FA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44267DD2-6D58-495D-BD38-9ED79E64FA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44267DD2-6D58-495D-BD38-9ED79E64FA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44267DD2-6D58-495D-BD38-9ED79E64FA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE785EF5-E305-4E8C-909C-2F4379C07330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE785EF5-E305-4E8C-909C-2F4379C07330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE785EF5-E305-4E8C-909C-2F4379C07330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE785EF5-E305-4E8C-909C-2F4379C07330}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2BCCA45B-2A17-4DC7-9C6D-0323B4BC08A4} = {D9BF3AE3-BE71-4BB4-80F6-BA55DD4603BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B27F6C2B-58EB-4F40-B250-43D40A7C60C4}
+	EndGlobalSection
+EndGlobal

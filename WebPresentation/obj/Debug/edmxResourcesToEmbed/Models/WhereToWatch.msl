@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="wheretowatch_dbModelStoreContainer" CdmEntityContainer="wheretowatch_dbEntities">
+    <EntitySetMapping Name="Actors">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.Actor">
+        <MappingFragment StoreEntitySet="Actor">
+          <ScalarProperty Name="actorid" ColumnName="actorid" />
+          <ScalarProperty Name="adult" ColumnName="adult" />
+          <ScalarProperty Name="alsoknownas" ColumnName="alsoknownas" />
+          <ScalarProperty Name="biography" ColumnName="biography" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="changes" ColumnName="changes" />
+          <ScalarProperty Name="deathday" ColumnName="deathday" />
+          <ScalarProperty Name="externalids" ColumnName="externalids" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="homepage" ColumnName="homepage" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="images" ColumnName="images" />
+          <ScalarProperty Name="imdbid" ColumnName="imdbid" />
+          <ScalarProperty Name="moviecredits" ColumnName="moviecredits" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="placeofbirth" ColumnName="placeofbirth" />
+          <ScalarProperty Name="popularity" ColumnName="popularity" />
+          <ScalarProperty Name="profilepath" ColumnName="profilepath" />
+          <ScalarProperty Name="taggedimages" ColumnName="taggedimages" />
+          <ScalarProperty Name="tvcredits" ColumnName="tvcredits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FavoriteActorsLists">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.FavoriteActorsList">
+        <MappingFragment StoreEntitySet="FavoriteActorsList">
+          <ScalarProperty Name="FavoriteActorsListid" ColumnName="FavoriteActorsListid" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="actors" ColumnName="actors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FavoriteMoviesLists">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.FavoriteMoviesList">
+        <MappingFragment StoreEntitySet="FavoriteMoviesList">
+          <ScalarProperty Name="FavoriteMoviesListID" ColumnName="FavoriteMoviesListID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="movies" ColumnName="movies" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="favoritetvshowslists">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.favoritetvshowslist">
+        <MappingFragment StoreEntitySet="favoritetvshowslist">
+          <ScalarProperty Name="favoritetvshowslistid" ColumnName="favoritetvshowslistid" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="tvshows" ColumnName="tvshows" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.Movie">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="accountstates" ColumnName="accountstates" />
+          <ScalarProperty Name="adult" ColumnName="adult" />
+          <ScalarProperty Name="alternativetitles" ColumnName="alternativetitles" />
+          <ScalarProperty Name="backdroppath" ColumnName="backdroppath" />
+          <ScalarProperty Name="belongstocollection" ColumnName="belongstocollection" />
+          <ScalarProperty Name="budget" ColumnName="budget" />
+          <ScalarProperty Name="changes" ColumnName="changes" />
+          <ScalarProperty Name="credits" ColumnName="credits" />
+          <ScalarProperty Name="genres" ColumnName="genres" />
+          <ScalarProperty Name="homepage" ColumnName="homepage" />
+          <ScalarProperty Name="images" ColumnName="images" />
+          <ScalarProperty Name="imdbid" ColumnName="imdbid" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="lists" ColumnName="lists" />
+          <ScalarProperty Name="movieid" ColumnName="movieid" />
+          <ScalarProperty Name="originallanguage" ColumnName="originallanguage" />
+          <ScalarProperty Name="OriginalTitle" ColumnName="OriginalTitle" />
+          <ScalarProperty Name="overview" ColumnName="overview" />
+          <ScalarProperty Name="popularity" ColumnName="popularity" />
+          <ScalarProperty Name="posterpath" ColumnName="posterpath" />
+          <ScalarProperty Name="productioncompanies" ColumnName="productioncompanies" />
+          <ScalarProperty Name="productioncountries" ColumnName="productioncountries" />
+          <ScalarProperty Name="recommendations" ColumnName="recommendations" />
+          <ScalarProperty Name="releasedate" ColumnName="releasedate" />
+          <ScalarProperty Name="releasedates" ColumnName="releasedates" />
+          <ScalarProperty Name="releases" ColumnName="releases" />
+          <ScalarProperty Name="revenue" ColumnName="revenue" />
+          <ScalarProperty Name="reviews" ColumnName="reviews" />
+          <ScalarProperty Name="runtime" ColumnName="runtime" />
+          <ScalarProperty Name="similar" ColumnName="similar" />
+          <ScalarProperty Name="spokenlanguages" ColumnName="spokenlanguages" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="streamonlogo" ColumnName="streamonlogo" />
+          <ScalarProperty Name="streamon" ColumnName="streamon" />
+          <ScalarProperty Name="tagline" ColumnName="tagline" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="trailer" ColumnName="trailer" />
+          <ScalarProperty Name="translations" ColumnName="translations" />
+          <ScalarProperty Name="video" ColumnName="video" />
+          <ScalarProperty Name="videos" ColumnName="videos" />
+          <ScalarProperty Name="voteaverage" ColumnName="voteaverage" />
+          <ScalarProperty Name="votecount" ColumnName="votecount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TVShows">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.TVShow">
+        <MappingFragment StoreEntitySet="TVShow">
+          <ScalarProperty Name="backdroppath" ColumnName="backdroppath" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="credits" ColumnName="credits" />
+          <ScalarProperty Name="firstairdate" ColumnName="firstairdate" />
+          <ScalarProperty Name="genres" ColumnName="genres" />
+          <ScalarProperty Name="homepage" ColumnName="homepage" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="networks" ColumnName="networks" />
+          <ScalarProperty Name="numberofepisodes" ColumnName="numberofepisodes" />
+          <ScalarProperty Name="numberofseasons" ColumnName="numberofseasons" />
+          <ScalarProperty Name="originalName" ColumnName="originalName" />
+          <ScalarProperty Name="overview" ColumnName="overview" />
+          <ScalarProperty Name="popularity" ColumnName="popularity" />
+          <ScalarProperty Name="posterpath" ColumnName="posterpath" />
+          <ScalarProperty Name="seasons" ColumnName="seasons" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="streamonlogo" ColumnName="streamonlogo" />
+          <ScalarProperty Name="streamon" ColumnName="streamon" />
+          <ScalarProperty Name="trailer" ColumnName="trailer" />
+          <ScalarProperty Name="tvshowid" ColumnName="tvshowid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="videos" ColumnName="videos" />
+          <ScalarProperty Name="voteaverage" ColumnName="voteaverage" />
+          <ScalarProperty Name="votecount" ColumnName="votecount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="wheretowatch_dbModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserRole" TypeName="wheretowatch_dbModel.UserRole" StoreEntitySet="UserRole">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_add_userRole" FunctionName="wheretowatch_dbModel.Store.sp_add_userRole" />
+    <FunctionImportMapping FunctionImportName="sp_authenticate_user" FunctionName="wheretowatch_dbModel.Store.sp_authenticate_user" />
+    <FunctionImportMapping FunctionImportName="sp_insert_new_user" FunctionName="wheretowatch_dbModel.Store.sp_insert_new_user" />
+    <FunctionImportMapping FunctionImportName="sp_reactivate_user" FunctionName="wheretowatch_dbModel.Store.sp_reactivate_user" />
+    <FunctionImportMapping FunctionImportName="sp_reset_passwordhash" FunctionName="wheretowatch_dbModel.Store.sp_reset_passwordhash" />
+    <FunctionImportMapping FunctionImportName="sp_safely_deactivate_user" FunctionName="wheretowatch_dbModel.Store.sp_safely_deactivate_user" />
+    <FunctionImportMapping FunctionImportName="sp_safely_remove_userRole" FunctionName="wheretowatch_dbModel.Store.sp_safely_remove_userRole" />
+    <FunctionImportMapping FunctionImportName="sp_select_all_roles" FunctionName="wheretowatch_dbModel.Store.sp_select_all_roles" />
+    <FunctionImportMapping FunctionImportName="sp_select_all_users" FunctionName="wheretowatch_dbModel.Store.sp_select_all_users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="wheretowatch_dbModel.sp_select_all_users_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_roles_by_UserID" FunctionName="wheretowatch_dbModel.Store.sp_select_roles_by_UserID" />
+    <FunctionImportMapping FunctionImportName="sp_select_user_by_email" FunctionName="wheretowatch_dbModel.Store.sp_select_user_by_email">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="wheretowatch_dbModel.sp_select_user_by_email_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_user_by_id" FunctionName="wheretowatch_dbModel.Store.sp_select_user_by_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="wheretowatch_dbModel.sp_select_user_by_id_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_users_by_active" FunctionName="wheretowatch_dbModel.Store.sp_select_users_by_active">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="wheretowatch_dbModel.sp_select_users_by_active_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_update_passwordhash" FunctionName="wheretowatch_dbModel.Store.sp_update_passwordhash" />
+    <FunctionImportMapping FunctionImportName="sp_update_user_profile_data" FunctionName="wheretowatch_dbModel.Store.sp_update_user_profile_data" />
+  </EntityContainerMapping>
+</Mapping>

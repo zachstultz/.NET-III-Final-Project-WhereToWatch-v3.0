@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="wheretowatch_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="actorid" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="imdbid" />
+    </Key>
+    <Property Name="actorid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adult" Type="Boolean" Nullable="false" />
+    <Property Name="alsoknownas" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="biography" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="birthday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="changes" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="deathday" Type="DateTime" Precision="3" />
+    <Property Name="externalids" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="gender" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="homepage" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="images" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="imdbid" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="moviecredits" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="placeofbirth" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="popularity" Type="Double" />
+    <Property Name="profilepath" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="taggedimages" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="tvcredits" Type="Binary" MaxLength="1" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FavoriteActorsList">
+    <Key>
+      <PropertyRef Name="FavoriteActorsListid" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="FavoriteActorsListid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="actors" Type="Binary" MaxLength="1" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FavoriteMoviesList">
+    <Key>
+      <PropertyRef Name="FavoriteMoviesListID" />
+    </Key>
+    <Property Name="FavoriteMoviesListID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="movies" Type="Binary" MaxLength="1" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="favoritetvshowslist">
+    <Key>
+      <PropertyRef Name="favoritetvshowslistid" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="favoritetvshowslistid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="tvshows" Type="Binary" MaxLength="1" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="movieid" />
+    </Key>
+    <Property Name="accountstates" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="adult" Type="Int32" Nullable="false" />
+    <Property Name="alternativetitles" Type="Int32" />
+    <Property Name="backdroppath" Type="Int32" />
+    <Property Name="belongstocollection" Type="Int32" />
+    <Property Name="budget" Type="Double" />
+    <Property Name="changes" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="credits" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="genres" Type="Binary" MaxLength="1" FixedLength="false" Nullable="false" />
+    <Property Name="homepage" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="images" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="imdbid" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="keywords" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="lists" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="movieid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="originallanguage" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="OriginalTitle" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="overview" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="popularity" Type="Double" Nullable="false" />
+    <Property Name="posterpath" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="productioncompanies" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="productioncountries" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="recommendations" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="releasedate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="releasedates" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="releases" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="revenue" Type="Double" />
+    <Property Name="reviews" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="runtime" Type="Int32" Nullable="false" />
+    <Property Name="similar" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="spokenlanguages" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="streamonlogo" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="streamon" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="tagline" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="trailer" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="translations" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="video" Type="Boolean" />
+    <Property Name="videos" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="voteaverage" Type="Double" Nullable="false" />
+    <Property Name="votecount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.UserRole" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="TVShow">
+    <Key>
+      <PropertyRef Name="tvshowid" />
+    </Key>
+    <Property Name="backdroppath" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="createdby" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="credits" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="firstairdate" Type="DateTime" Precision="3" />
+    <Property Name="genres" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="homepage" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="keywords" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="networks" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="numberofepisodes" Type="Int32" Nullable="false" />
+    <Property Name="numberofseasons" Type="Int32" Nullable="false" />
+    <Property Name="originalName" Type="String" MaxLength="35" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="overview" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="popularity" Type="Double" Nullable="false" />
+    <Property Name="posterpath" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="seasons" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="streamonlogo" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="streamon" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="trailer" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="tvshowid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="videos" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="voteaverage" Type="Double" Nullable="false" />
+    <Property Name="votecount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Roles" Relationship="Self.UserRole" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="UserRole">
+    <End Role="Role" Type="Self.Role" Multiplicity="*" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="wheretowatch_dbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actors" EntityType="Self.Actor" />
+    <EntitySet Name="FavoriteActorsLists" EntityType="Self.FavoriteActorsList" />
+    <EntitySet Name="FavoriteMoviesLists" EntityType="Self.FavoriteMoviesList" />
+    <EntitySet Name="favoritetvshowslists" EntityType="Self.favoritetvshowslist" />
+    <EntitySet Name="Genres" EntityType="Self.Genre" />
+    <EntitySet Name="Movies" EntityType="Self.Movie" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="TVShows" EntityType="Self.TVShow" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="UserRole" Association="Self.UserRole">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <FunctionImport Name="sp_add_userRole">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_authenticate_user" ReturnType="Collection(Int32)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="PasswordHash" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insert_new_user" ReturnType="Collection(Decimal)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_reactivate_user">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_reset_passwordhash">
+      <Parameter Name="Email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_safely_deactivate_user">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_safely_remove_userRole">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_select_all_roles" ReturnType="Collection(String)" />
+    <FunctionImport Name="sp_select_all_users" ReturnType="Collection(wheretowatch_dbModel.sp_select_all_users_Result)" />
+    <FunctionImport Name="sp_select_roles_by_UserID" ReturnType="Collection(String)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_select_user_by_email" ReturnType="Collection(wheretowatch_dbModel.sp_select_user_by_email_Result)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_select_user_by_id" ReturnType="Collection(wheretowatch_dbModel.sp_select_user_by_id_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_select_users_by_active" ReturnType="Collection(wheretowatch_dbModel.sp_select_users_by_active_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_update_passwordhash">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="OldPasswordHash" Mode="In" Type="String" />
+      <Parameter Name="NewPasswordHash" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_update_user_profile_data">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="NewEmail" Mode="In" Type="String" />
+      <Parameter Name="NewFirstName" Mode="In" Type="String" />
+      <Parameter Name="NewLastName" Mode="In" Type="String" />
+      <Parameter Name="NewPhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="OldEmail" Mode="In" Type="String" />
+      <Parameter Name="OldFirstName" Mode="In" Type="String" />
+      <Parameter Name="OldLastName" Mode="In" Type="String" />
+      <Parameter Name="OldPhoneNumber" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_select_all_users_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="15" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_select_user_by_email_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="15" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_select_user_by_id_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="15" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_select_users_by_active_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="15" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+  </ComplexType>
+</Schema>

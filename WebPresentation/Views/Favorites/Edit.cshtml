@@ -1,0 +1,64 @@
+﻿@using DomainModels
+@model object
+
+@{
+    Movie currentMovie = new Movie();
+    Tv currentTvShow = new Tv();
+}
+
+@{
+    if (Model is Movie movie)
+    {
+        currentMovie = (Movie) Model;
+    }
+    if (Model is Tv tv)
+    {
+        currentTvShow = (Tv) Model;
+    }
+}
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @currentTvShow.Name + " (")
+    @{
+        System.Diagnostics.Debug.Assert(currentTvShow.FirstAirDate != null, "currentTvShow.FirstAirDate != null");
+    }
+    @(currentTvShow.FirstAirDate.Value.Year + ")")</h2>
+
+<form>
+    <div class="mb-3">
+        <label for="movieTitle" class="form-label">Title</label>
+        <input type="text" class="form-control" id="movieTitle" aria-describedby="movieTitle">
+    </div>
+    <div class="mb-3">
+        <label for="moveYear" class="form-label">Year</label>
+        <input type="number" class="form-control" id="moveYear" aria-describedby="moveYear">
+    </div>
+    <div class="mb-3">
+        <label for="movieOverview" class="form-label">Overview</label>
+        <input type="text" class="form-control" id="movieOverview" aria-describedby="movieOverview">
+    </div>
+    <div class="mb-3">
+        <label for="movieGenres" class="form-label">Genres</label>
+        <input type="text" class="form-control" id="movieGenres" aria-describedby="movieGenres">
+    </div>
+    <div class="mb-3">
+        <label for="movieKeywords" class="form-label">Keywords</label>
+        <input type="text" class="form-control" id="movieKeywords" aria-describedby="movieKeywords">
+    </div>
+    <div class="mb-3">
+        <label for="movieBudget" class="form-label">Budget</label>
+        <input type="number" class="form-control" id="movieBudget" aria-describedby="movieBudget">
+    </div>
+    <div class="mb-3">
+        <label for="moviePopularity" class="form-label">Popularity</label>
+        <input type="number" class="form-control" id="moviePopularity" aria-describedby="moviePopularity">
+    </div>
+    <div class="mb-3">
+        <label for="movieRuntime" class="form-label">Runtime</label>
+        <input type="number" class="form-control" id="movieRuntime" aria-describedby="movieRuntime">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
