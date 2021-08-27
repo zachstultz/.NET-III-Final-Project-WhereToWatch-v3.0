@@ -4,9 +4,14 @@ more C#, more visual studio, and xaml. I rewrote a ton of my old code from the p
 
 # IMPORTANT STEPS FOR TESTING
 1. Add your API Key to MediaLogicLayer/MediaAPI.cs
-2. Add the name of your SQL Server Instance to each sqlcmd command in create_db.bat (the default is sqlexpress)
-3. Add the name of your SQL Server Instance to the _connectionString in MediaDataAccess/DBConnection.cs
-4. Switch the default 
+![image](https://user-images.githubusercontent.com/8385256/131178628-40ef385f-60a4-4c52-ad41-753fbd17025d.png)
+3. Add the name of your SQL Server Instance to each sqlcmd command in create_db.bat (the default is sqlexpress)
+![image](https://user-images.githubusercontent.com/8385256/131178544-7ef6f7c1-0aaa-424f-adfa-452a7033b6fc.png)
+4. Add the name of your SQL Server Instance to the _connectionString in MediaDataAccess/DBConnection.cs
+![image](https://user-images.githubusercontent.com/8385256/131178454-f28fee3d-8dc9-4980-8f3a-7f3ee367364d.png)
+5. Switch the current startup project between WpfPresentation(DESKTOP APP) and WebPresentation(WEBSITE), or set both of them to start in Multiple startup projects.
+![image](https://user-images.githubusercontent.com/8385256/131178378-ba2e5b55-efff-42ce-acdf-8049b1b1d601.png)
+
 
 
 # Usage/Features
